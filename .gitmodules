@@ -1,0 +1,6 @@
+[submodule "thirdparty/FlameGraph"]
+	path = thirdparty/FlameGraph
+	url = git@github.com:brendangregg/FlameGraph.git
+[submodule "thirdparty/jfr-flame-graph"]
+	path = thirdparty/jfr-flame-graph
+	url = git@github.com:chrishantha/jfr-flame-graph.git

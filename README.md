@@ -13,7 +13,7 @@ sbt clean 'project benchmark' 'set scalaVersion := "2.12.6"' 'jmh:run -f 1 -i 20
 [info] Benchmark      Mode  Cnt     Score    Error  Units
 [info] Richards.run  thrpt   20  6623.674 ± 51.901  ops/s
 
-sbt clean 'project benchmark' 'set scalaVersion := "2.12.6"' 'set scalacOptions in ThisBuild ++= Seq("-opt:l:inline", "-opt-inline-from")' 'jmh:run -f 1 -i 20 -wi 20 -t 1 Richards'
+sbt clean 'project benchmark' 'set scalaVersion := "2.12.6"' 'set scalacOptions in ThisBuild ++= Seq("-opt:l:inline", "-opt-inline-from:**")' 'jmh:run -f 1 -i 20 -wi 20 -t 1 Richards'
 [info] Benchmark      Mode  Cnt     Score    Error  Units
 [info] Richards.run  thrpt   20  7456.257 ± 23.585  ops/s
 ```
